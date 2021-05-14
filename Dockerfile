@@ -99,8 +99,7 @@ RUN python3 -m pip install --upgrade tensorflow==2.3 keras
 RUN python3 -m pip install -U pybind11 spdlog
 RUN python3 -m pip install -U torch 
 RUN python3 -m pip install -U git+https://github.com/google-research/torchsde.git
-RUN python3 -m pip install -U git+https://github.com/patrick-kidger
-/torchcde.git
+RUN python3 -m pip install -U git+https://github.com/patrick-kidger/torchcde.git
 RUN python3 -m pip install -U git+https://github.com/patrick-kidger/NeuralCDE.git
 
 RUN mkdir -p /cvmfs
