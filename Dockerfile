@@ -91,13 +91,15 @@ RUN python3 -m pip --no-cache-dir install \
     pandas \
     Pillow \
     scipy \
-    sklearn
-
-# Install TensorFlow GPU version.
-RUN python3 -m pip install --upgrade tensorflow==2.3 keras
+    sklearn \
+    sktime \
+    tqdm
 
 RUN python3 -m pip install -U pybind11 spdlog
-RUN python3 -m pip install -U torch 
+
+# Install TensorFlow GPU version and torch
+RUN python3 -m pip install --upgrade tensorflow==2.3 keras
+RUN python3 -m pip install -U torch torchaudio
 RUN python3 -m pip install -U git+https://github.com/google-research/torchsde.git
 RUN python3 -m pip install -U git+https://github.com/patrick-kidger/torchcde.git
 RUN python3 -m pip install -U git+https://github.com/patrick-kidger/NeuralCDE.git
