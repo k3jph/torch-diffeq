@@ -1,3 +1,8 @@
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/k3jph/torch-diffeq)
+![Docker Pulls](https://img.shields.io/docker/pulls/k3jph/torch-diffeq)
+![Docker Image Version (latest semver)](https://img.shields.io/docker/v/k3jph/torch-diffeq?sort=semver)
+[![DOI](https://zenodo.org/badge/367334926.svg)](https://zenodo.org/badge/latestdoi/367334926)
+
 # TorchCDE Dockerfile
 
 [Docker](http://docker.com) container to use [TorchCDE](https://github.com/patrick-kidger/torchcde).
