@@ -93,6 +93,7 @@ RUN python3 -m pip --no-cache-dir install \
     Pillow \
     scipy \
     sklearn \
+    sklearn-pandas \
     sktime \
     tqdm
 
