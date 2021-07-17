@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04
+FROM nvidia/cuda:11.4.0-cudnn8-devel-ubuntu20.04
 
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
     apt-get update && apt-get install -y --no-install-recommends \
@@ -100,7 +100,7 @@ RUN python3 -m pip --no-cache-dir install \
 RUN python3 -m pip install -U pybind11 spdlog
 
 # Install TensorFlow GPU version and torch
-RUN python3 -m pip install --upgrade tensorflow==2.3 keras
+RUN python3 -m pip install --upgrade tensorflow keras
 RUN python3 -m pip install -U torch torchaudio torchvision
 RUN python3 -m pip install -U git+https://github.com/google-research/torchsde.git
 RUN python3 -m pip install -U git+https://github.com/patrick-kidger/torchcde.git
