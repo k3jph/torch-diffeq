@@ -65,6 +65,7 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
     r-cran-rcpp \
     r-cran-rinside \
     rsync \
+    ssh \
     srm-ifce-dev \
     unixodbc-dev \
     unzip \
