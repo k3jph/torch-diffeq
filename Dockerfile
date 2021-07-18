@@ -97,6 +97,8 @@ RUN python3 -m pip --no-cache-dir install \
     sklearn-pandas \
     sktime \
     tqdm
+    
+RUN python3 -m pip install -U pip
 
 RUN python3 -m pip install -U pybind11 spdlog
 
