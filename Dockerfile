@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.4.0-cudnn8-devel-ubuntu20.04
+FROM nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04
 
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
     apt-get update && apt-get install -y --no-install-recommends \
